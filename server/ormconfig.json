@@ -1,0 +1,15 @@
+{
+  "type": "postgres",
+
+  "url": "postgresql://postgres:docker@localhost:5432/happy_nestjs",
+
+  "entities": [
+    "./src/modules/**/entities/*.entity.ts"
+  ],
+
+  "migrations": [
+    "./src/shared/database/migrations/*.ts"
+  ],
+
+  "synchronize": true
+}
